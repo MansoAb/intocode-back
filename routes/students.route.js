@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const router = Router();
-const { studentControllers } = require("../controllers//student.controllers");
+const { studentControllers } = require("../controllers/students.controller");
 
 router.post("/students", studentControllers.addStudent);
 router.patch("/students/:id", studentControllers.addNote);

@@ -5,8 +5,8 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(require("./routes/group.routes"));
-app.use(require("./routes/student.route"));
+app.use(require("./routes/groups.route"));
+app.use(require("./routes/students.route"));
 
 mongoose.connect(
   "mongodb+srv://Mansur:1954@cluster0.xyb0huh.mongodb.net/INTOCODE",
